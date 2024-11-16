@@ -1,3 +1,4 @@
+import { Client } from 'appwrite';
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
@@ -66,6 +67,9 @@ const router = createBrowserRouter([
     ]
   }
 ])
+
+const client = new Client();
+client.setProject('66dfe445003a79fe1875');
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
